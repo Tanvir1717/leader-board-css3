@@ -30,6 +30,32 @@ hr {
 }
 
 
+/* navbar styles */
+
+header {
+    background-color: #562EFF;
+    color: #ffffff;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 36px;
+}
+
+nav ul li img {
+    width: 51px;
+    height: 51px;
+}
+
+
 /* top players styles */
 
 .top-players {
@@ -132,6 +158,15 @@ hr {
 
 .fa-star.empty {
     color: #AEAEAE;
+    font-size: 14px;
+}
+
+.course-duration {
+    background-color: #FFE4E8;
+    border-radius: 15px;
+    font-size: 14px;
+    padding: 0 7px;
+    color: #FF4A60;
 }
 
 
@@ -141,6 +176,19 @@ hr {
 /* mobile devices */
 
 @media screen and (max-width: 688px) {
+    header {
+        width: 360px;
+        background-color: transparent;
+        color: #562EFF;
+    }
+    nav {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    nav ul {
+        align-items: flex-start;
+        flex-direction: column;
+    }
     .container {
         width: 100%;
     }
@@ -155,7 +203,12 @@ hr {
     }
 }
 
-@media only screen and (min-width: 688px) and (max-width: 992px) {
+@media only screen and (min-width: 688px) and (max-width: 1024px) {
+    header {
+        width: 780px;
+        background-color: transparent;
+        color: #562EFF;
+    }
     .container {
         width: 100%;
     }
